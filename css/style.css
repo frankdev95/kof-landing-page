@@ -1,0 +1,62 @@
+@font-face {
+  font-family: gillsans;
+  src: url("../fonts/gillsans.otf"); }
+
+@font-face {
+  font-family: gillsansitalic;
+  src: url("../fonts/gillsanslight.otf"); }
+
+*,
+*::after,
+*::before {
+  box-sizing: inherit;
+  padding: 0;
+  margin: 0; }
+
+html {
+  box-sizing: border-box;
+  font-size: 62.5%; }
+
+body {
+  font-family: gillsans, sans-serif; }
+
+.container {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  padding: 7rem;
+  width: 100vw;
+  height: 100vh; }
+
+.content {
+  display: flex;
+  flex-direction: column; }
+  .content__header ul {
+    list-style: none; }
+    .content__header ul li {
+      display: inline-block;
+      font-size: 2.2rem;
+      text-transform: uppercase; }
+      .content__header ul li a {
+        color: #fff;
+        text-decoration: none; }
+      .content__header ul li:not(:last-child) {
+        margin-right: 5rem; }
+  .content__logo {
+    width: 25%; }
+
+.background-img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  z-index: -1; }
+
+.media {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  align-items: flex-end; }
+  .media__boxes-img {
+    width: 200%;
+    position: relative;
+    right: 50rem; }
